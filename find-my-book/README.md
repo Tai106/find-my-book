@@ -1,7 +1,7 @@
 # Find-My-book
 
 # Description
-* This is a fully functioning Google Books API search engine built with GraphQL API and Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It allows users to search for and save books.
+* This is a fully functioning Google Books API search engine built with GraphQL API & Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It allows users to search for & save books.
 
 
 # Technology Used
