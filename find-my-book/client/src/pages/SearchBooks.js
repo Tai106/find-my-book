@@ -5,12 +5,11 @@ import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { useMutation } from '@apollo/client';
 import { SAVE_BOOK } from '../utils/mutations';
 
-const SearchBooks = () => {
+  const SearchBooks = () => {
   const [searchedBooks, setSearchedBooks] = useState([]);
   const [searchInput, setSearchInput] = useState('');
-  const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
-
   const [saveBook, { error }] = useMutation(SAVE_BOOK);
+  const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
 
   useEffect(() => {
     return () => saveBookIds(savedBookIds);
@@ -58,8 +57,9 @@ const SearchBooks = () => {
     }
 
     try {
-      const { data } = await saveBook({
-        variables: { newBook: { ...bookToSave } },
+      console.log(bookToSave);
+      await saveBook({
+        variables: { bookData: { ...bookToSave } }
       });
 
       setSavedBookIds([...savedBookIds, bookToSave.bookId]);
