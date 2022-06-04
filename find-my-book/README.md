@@ -25,8 +25,11 @@
 * `npm run build`
 * `npm run develop` 
 
+# Screenshots
+* ![search-results](https://user-images.githubusercontent.com/92614793/171967147-16215858-2347-4fa0-bf64-89e6a940450f.JPG)
+
 # Deployed URL
-*
+* https://fast-temple-54089.herokuapp.com/
 
 # Contributor
 * Taivon Edwards
